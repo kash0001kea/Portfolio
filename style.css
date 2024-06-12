@@ -24,6 +24,7 @@ header {
     padding: 30px 200px 30px 200px;
     background-color: #765AE4;
     box-shadow: 0 12px 28px 0 rgba(0, 0, 0, 0.3);
+    z-index: 1;
 }
 
 .logo a{
@@ -229,6 +230,7 @@ nav a:active {
 
 .home{
     height: 932px;
+    width: 100%;
     background-image: linear-gradient(to top right,#31255E, #765AE4);
     display: flex;
     align-items: center;
@@ -349,6 +351,61 @@ section h2{
 }
 
 /* ----- OM MEG ----- */
+
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about_card{
+    max-width: 690px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background-color: #765AE4;
+    padding: 100px;
+    margin: 100px;
+    border-radius: 25px;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.5);
+}
+
+.about img{
+    max-width: 250px;
+    margin: auto auto 50px auto;
+}
+
+.about p{
+    font-family: "roboto", sans-serif;
+    font-size: 1rem;
+    font-weight: 200;
+    max-width: 65ch;
+    color: #fff;
+    margin-bottom: 50px;
+}
+
+.about a{
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.about .bttns{
+    gap: 25px;
+}
+
+.about .button1, .about .button2{
+    width: 240px;
+    height: 50px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+.about .button1:hover, .about .button2:hover{
+    color: #765AE4;
+}
 /* ----- PROSJEKT ----- */
 
 /* ----- Footer ----- */
@@ -363,7 +420,7 @@ footer {
 }
 footer .menu{
     display: flex;
-    padding: 25px 0 10px 0;
+    padding: 25px 0 25px 0;
     font-family: "roboto", sans-serif;
     font-size: 1rem;
     font-weight: 900;
@@ -377,6 +434,13 @@ footer div{
     padding: 15px;
     background-color: #1a1a1a;
 }
+
+footer a:hover{
+    border-radius: 50px;
+    background-color: #fff;
+    color: #31255E;
+}
+
 
 /*-----------------------------------------------*/
 /*--------------- DESKTOP VERSION ----------------*/
@@ -424,9 +488,12 @@ section h2{
 
 .card:hover{
     scale: 1.05;
-    margin:10px
+    margin:10px;
+    cursor:pointer;
 }
 /* ----- OM MEG ----- */
+
+
 /* ----- PROSJEKT ----- */
 
 }
