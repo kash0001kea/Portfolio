@@ -1,0 +1,432 @@
+/* Reset Margin */
+*{
+    Box-sizing: border-box;
+    margin: 0;
+    }
+    
+    body{
+        margin:0;
+    }
+    /* general */
+    img{
+    width: 100%;
+    height: auto; 
+    display: block;
+    }
+
+    /* Navigation */
+header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 200px 30px 200px;
+    background-color: #765AE4;
+    box-shadow: 0 12px 28px 0 rgba(0, 0, 0, 0.3);
+}
+
+.logo a{
+    display: block;
+    padding: 10px;
+    color:#fff;
+    text-decoration: none;
+    font-family: "montserrat", sans-serif;
+    font-weight: 900;
+    font-size: 35px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    
+    font-family: 'roboto', sans-serif;
+    font-weight: 900;
+    font-size: 1.2rem;
+}
+
+.menu{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.menu li:last-child{
+    margin-right: 0;
+}
+
+.menu a{
+    display: block;
+    padding: 10px 25px 10px 25px;
+    border-radius: 50px;
+    color:#fff;
+    text-decoration: none;
+    transition-duration: 0.4s;
+    text-align: end;
+}
+
+nav a:visited {
+    text-decoration: none;
+    color: #fff;
+}
+nav a:hover {
+    text-decoration: none;
+    color:#765AE4;
+}
+
+nav a:active {
+    text-decoration: underline;
+} 
+
+.burger {
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+  }
+  
+  .burger .line {
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    margin-bottom: 5px;
+    transition: 0.2s linear;
+  }
+  .burger {
+    display: none;
+  }
+
+  /* -----index page only------ */
+  .index header{
+    background-color: #31255E00;
+    position:absolute;
+    width: 100%;
+    box-shadow: none;
+}
+
+@media (min-width: 1200px){
+    nav a:hover{
+    background-color: #31255E;
+    border-radius: 50px;
+    }
+}
+  
+
+/*-----------------------------------------------*/
+/*--------------- MOBILE VERSION ----------------*/
+/*-----------------------------------------------*/
+
+
+@media (max-width: 1200px){
+   
+    /* ---------------- BURGER MENU ---------------- */
+    header{
+        padding: 20px 20px 20px 20px;
+    }
+    
+    .menu {
+        display: none;
+      }
+      .burger {
+        display: block;
+      }
+
+      .burger.active .line:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+        transition: 0.2s linear;
+      }
+    
+      .burger.active .line:nth-child(2) {
+        opacity: 0;
+        transition: 0.15s linear;
+      }
+    
+      .burger.active .line:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+        transition: 0.2s linear;
+      }
+    
+      nav.active .menu {
+        display: block;
+        background-color: #1a1a1a;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        z-index: 1;
+      }
+    
+      nav.active .menu li {
+        margin: 10px 20px;
+      }
+    
+      nav.active .menu a {
+        font-size: 1.5rem;
+      }
+      
+    }
+
+/* ------Buttons------ */
+
+.bttns{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+}
+
+.button1{
+    margin: 10px;
+    padding: 12px 80px 12px 80px;
+    border: none;
+    border-radius: 50px;
+    text-decoration: none;
+    font-family: 'roboto', sans-serif;
+    text-transform:uppercase;
+    font-weight: 900;
+    font-size: 1rem;
+    background: #fff;
+    color: #765AE4;
+    transition-duration: 0.4s; 
+}
+
+.button1:hover{
+    background: #31255E;
+    color: #fff;
+    scale: 1.05;
+}
+
+.button2{
+    margin: 10px;
+    padding: 12px 80px 12px 80px;
+    border: solid white 2px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-family: 'roboto', sans-serif;
+    text-transform:uppercase;
+    font-weight: 900;
+    font-size: 1rem;
+    color: #fff;
+    transition-duration: 0.4s;
+}
+
+.button2:hover{
+    border: solid 2px #31255E;
+    background: #31255E;
+    color: #fff;
+    scale: 1.05;
+}
+
+
+/* ----- HOME ----- */
+
+.home{
+    height: 932px;
+    background-image: linear-gradient(to top right,#31255E, #765AE4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color:#fff;
+}
+
+.hero .text{
+    padding: 75px;
+    text-align: center;
+}
+
+h1{
+    font-family: "montserrat", sans-serif;
+    font-size: 60px;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+    margin:0;
+}
+
+h2{
+    font-family: "montserrat", sans-serif;
+    font-size: 25px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+h3{
+    font-family: "roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 100;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* -----Portfolio----- */
+
+section{
+    height: 210px;
+    background-color: #31255E;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section h2{
+    font-size: 14px;
+    text-transform: none;
+}
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    color: #fff;
+    margin: 50px auto 50px auto;
+}
+.cards a{
+    text-decoration: none;
+    color:inherit
+}
+
+.card {
+    border-radius: 15px;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.5);
+    border-collapse: collapse;
+    transition-duration: .4s;
+}
+
+
+.cards img{
+    width: 380px;
+    border-radius: 15px 15px 0 0;
+}
+
+.card_info{
+    width: 380px;
+    background-color: #765AE4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:15px;
+    height: 100px;
+    border-radius: 0 0 15px 15px;
+}
+.v_line{
+    height: 70px;
+    border-right: solid 2px #fff;
+}
+.left, .right{
+    display: flex;
+    flex-direction: column;
+}
+.left h3{
+    font-size: 14px;
+}
+.left h2{
+    font-size: 34px;
+}
+.right h2{
+    font-size: 25px;
+}
+.right h4{
+    font-family: "lora", serif !important;
+    font-style: italic;
+}
+
+/* ----- OM MEG ----- */
+/* ----- PROSJEKT ----- */
+
+/* ----- Footer ----- */
+footer {
+    background-color: #31255E;
+    color: #fff;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer .menu{
+    display: flex;
+    padding: 25px 0 10px 0;
+    font-family: "roboto", sans-serif;
+    font-size: 1rem;
+    font-weight: 900;
+}
+footer div{
+    font-family: "roboto", sans-serif;
+    font-size: .8rem;
+    font-weight: 100;
+    text-align: center;
+    width: 100%;
+    padding: 15px;
+    background-color: #1a1a1a;
+}
+
+/*-----------------------------------------------*/
+/*--------------- DESKTOP VERSION ----------------*/
+/*-----------------------------------------------*/
+
+@media (min-width: 1200px){
+/* ----- HOME ----- */
+.bttns{
+    flex-direction: row;
+}
+
+h1{
+    font-size: 120px;
+}
+h2{
+    font-size: 40px;
+}
+h3{
+    font-size: 35px;
+}
+
+/* ----- PORTFOLIO ----- */
+section{
+    height: 420px;
+}
+section h2{
+    font-size: 30px;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 1070px;
+}
+
+.cards img{
+    width: 500px;
+}
+
+.card_info{
+    width: 500px;
+}
+
+.card:hover{
+    scale: 1.05;
+    margin:10px
+}
+/* ----- OM MEG ----- */
+/* ----- PROSJEKT ----- */
+
+}
